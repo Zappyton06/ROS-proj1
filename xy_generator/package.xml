@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<package format="3">
+  <name>xy_generator</name>
+  <version>0.0.1</version>
+  <description>ROS2 package to generate random XY coordinates and send them via custom messages.</description>
+  <maintainer email="your_email@domain.com">Your Name</maintainer>
+  <license>Apache-2.0</license>
+
+  <!-- Build tools and dependencies -->
+  <buildtool_depend>ament_cmake</buildtool_depend>
+  <build_depend>rclcpp</build_depend>
+  <build_depend>std_msgs</build_depend>
+  <build_depend>rosidl_default_generators</build_depend>
+
+  <!-- Dependencies required for execution -->
+  <exec_depend>rclcpp</exec_depend>
+  <exec_depend>std_msgs</exec_depend>
+  <exec_depend>rosidl_default_runtime</exec_depend>
+
+  <!-- Specify that this package defines interfaces -->
+  <member_of_group>rosidl_interface_packages</member_of_group>
+
+  <!-- Export package information -->
+  <export>
+    <build_type>ament_cmake</build_type>
+    <exec_depend>rosidl_default_runtime</exec_depend>
+  </export>
+</package>
